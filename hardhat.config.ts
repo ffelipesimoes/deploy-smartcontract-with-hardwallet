@@ -10,16 +10,6 @@ const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
 
   networks: {
-    mumbai: {
-      url: process.env.POLYGON_MUMBAI_RPC_PROVIDER ?? '',
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : []
-    },
-    polygon: {
-      url: process.env.POLYGON_MAINNET_RPC_PROVIDER ?? '',
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : []
-    },
     "truffle-dashboard": {
       url: "http://localhost:24012/rpc"
     }
